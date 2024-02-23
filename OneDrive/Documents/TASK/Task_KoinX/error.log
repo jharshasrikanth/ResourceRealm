@@ -1,0 +1,10 @@
+error: Error updating cryptocurrency list: {"timestamp":"2024-02-23T16:17:25.949Z"}
+error: Error fetching historical price: {"timestamp":"2024-02-23T16:33:20.054Z"}
+error: Error fetching historical price: {"timestamp":"2024-02-23T16:33:32.554Z"}
+error: Error updating cryptocurrency list: {"timestamp":"2024-02-23T17:02:31.284Z"}
+error: Error fetching historical price: {"timestamp":"2024-02-23T17:06:11.914Z"}
+error: Error fetching companies: {"timestamp":"2024-02-23T17:22:46.773Z"}
+error: Error fetching companies: {"timestamp":"2024-02-23T17:26:48.484Z"}
+error: Error fetching companies: {"timestamp":"2024-02-23T17:27:23.180Z"}
+error: Error fetching companies: {"timestamp":"2024-02-23T17:27:29.681Z"}
+error: Error fetching companies: {"timestamp":"2024-02-23T17:33:57.461Z"}
