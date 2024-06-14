@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PDF Upload</title>
+  
+  <style>body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #007bff; /* Primary color for heading */
+  }
+  
+  form {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"],
+  input[type="file"] {
+    display: block;
+    width: calc(100% - 20px); /* Adjusted width to account for padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none; /* Remove default outline */
+  }
+  
+  input[type="text"]::placeholder {
+    color: #999; /* Placeholder color */
+  }
+  
+  input[type="file"] {
+    padding-top: 7px; /* Adjusted padding for file input */
+  }
+  
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .upload-btn {
+    background-color: #007bff;
+  }
+  
+  .search-btn {
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid #007bff;
+  }
+  
+  button:hover,
+  .search-btn:hover {
+    background-color: #121212; /* Darker shade on hover */
+  }
+  
+  p {
+    color: #555; /* Adjusted color */
+    font-weight: bold;
+    margin-top: 0; /* Remove default margin */
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  </style>
+</head>
+<body>
+  <h1>Resource Realm</h1>
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <p>Upload materials to repository</p>
+    <input type="text" name="title" placeholder="Title">
+    <input type="text" name="subject" placeholder="Subject">
+    <input type="file" name="pdf_file">
+    <button type="submit" class="upload-btn">Upload</button>
+  </form>
+  <hr>
+  <form action="/search" method="GET">
+    <p>Search and download materials from repository</p>
+    <input type="text" name="keyword" placeholder="Enter keyword">
+    <button type="submit" class="search-btn">Search</button>
+  </form>
+</body>
+</html>
